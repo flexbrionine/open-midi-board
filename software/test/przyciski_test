@@ -1,0 +1,56 @@
+void buttons() {
+
+  for (int i = 0; i < N_BUTTONS; i++) {
+
+    buttonCState[i] = digitalRead(BUTTON_ARDUINO_PIN[i]);
+
+#ifdef pin13
+    if (i == pin13index) {
+      buttonCState[i] = !buttonCState[i];
+    }
+#endif
+
+    if ((millis() - lastDebounceTime[i]) > debounceDelay) {
+
+      if (buttonPState[i] != buttonCState[i]) {
+        lastDebounceTime[i] = millis();
+
+        if (buttonCState[i] == LOW) {
+
+#ifdef ATMEGA328
+          MIDI.sendNoteOn(note + i, 127, midiCh);  // note, velocity, channel
+
+#elif ATMEGA32U4
+          noteOn(midiCh, note + i, 127);  // channel, note, velocity
+          MidiUSB.flush();
+
+#elif TEENSY
+          usbMIDI.sendNoteOn(note + i, 127, midiCh);  // note, velocity, channel
+
+#elif DEBUG
+          Serial.print(i);
+          Serial.println(": button on");
+#endif
+
+        } else {
+
+#ifdef ATMEGA328
+          MIDI.sendNoteOn(note + i, 0, midiCh);  // note, velocity, channel
+
+#elif ATMEGA32U4
+          noteOn(midiCh, note + i, 0);  // channel, note, velocity
+          MidiUSB.flush();
+
+#elif TEENSY
+          usbMIDI.sendNoteOn(note + i, 0, midiCh);  // note, velocity, channel
+
+#elif DEBUG
+          Serial.print(i);
+          Serial.println(": button off");
+#endif
+        }
+        buttonPState[i] = buttonCState[i];
+      }
+    }
+  }
+}

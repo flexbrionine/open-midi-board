@@ -1,0 +1,64 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "C:/Users/maxon/Documents/PlatformIO/Projects/midiController/include",
+                "C:/Users/maxon/Documents/PlatformIO/Projects/midiController/src",
+                "C:/Users/maxon/Documents/PlatformIO/Projects/midiController/lib/MIDIUSB-1.0.5/src",
+                "C:/Users/maxon/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "C:/Users/maxon/.platformio/packages/framework-arduino-avr/variants/micro",
+                "C:/Users/maxon/Documents/PlatformIO/Projects/midiController/lib/FastLED/src",
+                "C:/Users/maxon/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "C:/Users/maxon/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "C:/Users/maxon/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "C:/Users/maxon/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "C:/Users/maxon/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "C:/Users/maxon/Documents/PlatformIO/Projects/midiController/include",
+                    "C:/Users/maxon/Documents/PlatformIO/Projects/midiController/src",
+                    "C:/Users/maxon/Documents/PlatformIO/Projects/midiController/lib/MIDIUSB-1.0.5/src",
+                    "C:/Users/maxon/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "C:/Users/maxon/.platformio/packages/framework-arduino-avr/variants/micro",
+                    "C:/Users/maxon/Documents/PlatformIO/Projects/midiController/lib/FastLED/src",
+                    "C:/Users/maxon/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "C:/Users/maxon/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "C:/Users/maxon/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "C:/Users/maxon/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "C:/Users/maxon/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60116",
+                "ARDUINO_AVR_MICRO",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "USB_VID=0x2341",
+                "USB_PID=0x8037",
+                "USB_PRODUCT=\"Arduino Micro\"",
+                "USB_MANUFACTURER=\"Arduino\"",
+                "__AVR_ATmega32U4__",
+                ""
+            ],
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "compilerPath": "C:/Users/maxon/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "compilerArgs": [
+                "-mmcu=atmega32u4",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
