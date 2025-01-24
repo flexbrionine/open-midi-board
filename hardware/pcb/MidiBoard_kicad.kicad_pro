@@ -125,7 +125,7 @@
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -431,7 +431,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "DCDriver.kicad_pro",
+    "filename": "MidiBoard_kicad.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -576,7 +576,7 @@
   },
   "sheets": [
     [
-      "9e8de65f-17b7-42c0-8af5-24be4f95d860",
+      "61934a94-7a55-4d38-8c1d-bd4605892d2a",
       "Root"
     ]
   ],
